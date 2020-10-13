@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #e0e0e0;
+}
 /* --------- */
 
 .container {
@@ -17,10 +21,36 @@
 .float-r {
   float: right;
 }
+
 /* header */
 #image-content {
+  position: relative;
   height: 400px;
-  background: yellow;
+  background-image: url("../img/forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#image-content h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#image-content #subtitle {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
 }
 
 nav {
